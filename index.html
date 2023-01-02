@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        //class child extends parent
+      class MyClassA {
+        //number1
+
+        //number2
+
+        //number3-method/function
+        addition(x, y) {
+          return x + y;
+        }
+      }
+
+      let myobjecta = new MyClassA;
+      console.log(myobjecta.addition(5,3))
+
+      class MyClassB extends MyClassA {
+        //number1
+
+        //number2
+
+        //number3-method/function
+        substration(x, y) {
+          return x - y;
+        }
+      }
+
+      let myobjectb = new MyClassB;
+      console.log(myobjectb.substration(12,3))
+
+      class MyClassC extends MyClassB {
+        //number1
+
+        //number2
+
+        //number3-method/function
+        multiplication(x, y) {
+          return x * y;
+        }
+      }
+
+      let myobjectc = new MyClassC;
+      console.log(myobjectc.multiplication(5,5))
+
+      class MyClassD extends MyClassC {
+        //number1
+
+        //number2
+
+        //number3-method/function
+        division(x, y) {
+          return x / y;
+        }
+      }
+
+      let myobjectd = new MyClassD;
+      console.log(myobjectd.division(36,6))
+
+
+      console.log(myobjecta.addition(1,2));
+      console.log(myobjectb.substration(5,3));
+      console.log(myobjectc.multiplication(4,5));
+      console.log(myobjectd.division(10,2));
+    </script>
+  </body>
+</html>
